@@ -1,0 +1,110 @@
+
+<html>
+    <head>
+        <style>
+            *
+                {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            
+            }   
+            body
+                {
+                align-items: center;
+                background-image:url("https://media.istockphoto.com/photos/wooden-english-letters-background-picture-id857415422?k=20&m=857415422&s=612x612&w=0&h=ybIaVeD42Qxsl3uzAhiczz0xeflDbUy-m3qD1mtgNGk=");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            form
+                {
+                    height: 30rem;
+                    width: 25rem;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgb(54, 49, 42);
+                    border-left: 1px solid rgba(255,255,255,.3);
+                    border-right: 1px solid rgba(255,255,255,.3); 
+                    float: left;
+                    margin:120 0 0 400;
+                    opacity: .7;
+                
+                }
+            h1
+                {
+                    font-size: 50px;
+                    text-align: center;
+                    color: silver;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+                    letter-spacing: 3px;
+                    margin-bottom: 15%;
+                    opacity: .7;
+    
+                }
+            label
+                {
+                    font-size: 20px;
+                    color: wheat;
+                    margin-left: 10%;
+                }
+            input
+                {
+                    width: 80%;
+                    height: 25px;
+                    margin: 5% auto;
+                    margin-bottom: 8%;
+                    border: none;
+                    outline: none;
+                    border: transparent;
+                    color: black; 
+                }
+            button
+                {
+                    width: 150px;
+                    margin: 3% auto;
+                    color: black;
+                    font-size: 17px;
+                    background: rgba(255,255,255,0.06);
+                    padding: 10px 3px;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    background-color: bisque;
+                }
+            button:hover
+                {
+                    background-color: gray;
+                    color: white;
+                }
+               a
+                {
+                    font-size: 15px;
+                    text-align: center;
+                    color: white;
+                    opacity: .7;
+                    text-decoration: none;
+                }
+        </style>
+    </head>
+    <body>
+        <form name="myform" action="login.php" method="POST">
+            <h1>LOGIN</h1>
+    
+            <label for="uname">USERNAME</label>
+            <input type="text" id="uname" name="uname"  value=""><br>
+    
+            <label for="upswd1">PASSWORD</label>
+            <input type="password" id="upswd1" name="upswd1"  value="">
+    
+            <button input type="submit" name="login" method="POST" value="Login">Login</button>
+    
+            <p style="color:white; padding-left: 15px;">
+                <br><br>
+               &nbsp &nbsp <a style="color: rgb(15, 174, 237);" href="">Forgot password?</a>  
+                New to this website?<a style="color: rgb(15, 174, 237);" href="wordregister.html">Sign Up</a>
+              </p>
+            
+        </form>
+    </body>
+    </html>

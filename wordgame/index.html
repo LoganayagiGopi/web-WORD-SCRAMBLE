@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Scramble</title>
+    
+    <script src="words.js" defer></script>
+    <script src="script.js" defer></script>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(https://w0.peakpx.com/wallpaper/431/266/HD-wallpaper-blue-and-white-letter-blocks.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container
+{
+    width: 450px;
+    height: 450px;
+    border-radius: 7px;
+    background: rgba(4, 101, 137, 0.215);
+    
+}
+.container h2
+{
+    font-size: 30px;
+    color: white;
+    font-weight: 500;
+    padding: 18px 25px;
+    border-bottom: 1px solid #ccc;
+}
+.container .content
+{
+    margin: 25px 20px 35px;
+}
+.content .word
+{
+    color: white;
+    font-size: 33px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 24px;
+    margin-right: -25px;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+.content .details
+{
+    margin: 25px 0 20px;
+}
+.details p
+{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+
+}
+.details p b
+{
+    font-weight: 500;
+}
+.content input
+{
+    width: 400px;
+    height: 60px;
+    outline: none;
+    font-size: 18px;
+    margin-left: 8px;
+    padding: 0 16px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+.content .buttons
+{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.buttons button
+{
+    border:none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    width: calc(400px / 2 - 8px);
+}
+.buttons .refresh-word
+{
+    background: #6c757d;
+    margin-left: 8px;
+}
+.buttons .refresh-word:hover
+{
+    background-color: #7ab3e6;
+}
+.buttons .check-word
+{
+    background: #5372F0;
+    margin-right: 8px;
+}
+.buttons .check-word:hover
+{
+    background-color: lightseagreen;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Word Scramble</h2>
+        <div class="content">
+            <p class="word"></p>
+        <div class="details">
+            <p class="hint">Hint: <span></span></p>
+            <p class="time">Time Left: <span><b>30</b>s</span></p>
+        </div>
+        <input type="text" placeholder="Enter a valid word">
+        <div class="buttons">
+            <button class="refresh-word">Refresh Word</button>
+            <button class="check-word">Check Word</button>
+        </div>
+        <br><br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+         <a href="home.html"><button>Logout</button></a>
+    </div>
+    </div>
+    
+    </body>
+</html>

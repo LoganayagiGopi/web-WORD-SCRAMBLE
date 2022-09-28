@@ -1,0 +1,101 @@
+
+<html>
+    <head>
+        <title>
+            sign up
+        </title>
+        <style>
+            body{
+                background-image:url("https://media.istockphoto.com/photos/wooden-english-letters-background-picture-id857415422?k=20&m=857415422&s=612x612&w=0&h=ybIaVeD42Qxsl3uzAhiczz0xeflDbUy-m3qD1mtgNGk=");
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin-top: 50px;
+                text-align:center;
+                
+            }
+            h1{
+                font-size: 40px;
+                color: black;
+                
+            }
+
+            #reg
+            {
+                margin-top: 60px;
+                background-color: rgb(62, 59, 59);
+                width:500px;
+                height:500px;
+                justify-content: space-between;
+                text-decoration: solid;
+                padding: 10px;
+                margin-left: 450px;
+                color: white;
+                
+            }
+            button{
+                width: 150px;
+                padding: 15px 0;
+                text-align: center;
+                margin: 20px 10px;
+                font-weight: bold;
+                border: 2px solid #202020;
+                cursor: pointer;
+                position: relative;
+                overflow: hidden;
+                color: white;
+                background-color: gray;
+                font-size: 20px;
+            }
+            
+            
+            button:hover{
+                background-color: gray;
+            }
+            p{
+                margin-top: 150;
+                text-align: center;
+            }
+            a{
+                text-decoration: underline;
+                color: rgb(0, 204, 255);
+                font-size: 20px;
+            }
+            h4{
+                color: white;
+                font-size: 20px;
+            }
+            
+            </style>
+            </head>
+            <body>
+                
+            <h1>Create a New Account</h1>
+                <h2>
+                  <div id="reg">  
+                <form name="newform" action="register.php" method="POST">
+    <pre><label for="fname">First Name         :</label> <input type="text" id="fname" name="fname" value="" required=""></pre>
+    
+    <pre><label for="lname">Last Name          :</label> <input type="text" id="lname" name="lname" value="" required=""></pre>
+
+    <pre><label for="uname">User Name          :</label> <input type="text" id="uname" name="uname" value="" required=""></pre>
+    
+    <pre><label for="upswd1">Create Password    :</label> <input type="password" id="upswd1" name="upswd1" value="" required=""></pre>
+    
+    <pre><label for="upswd2">Confirm Password   :</label> <input type="password" id="upswd2" name="upswd2" value="" required=""></pre>
+    
+    <pre><label for="email">Email              :</label> <input type="email" id="email" name="email" value="" required=""></pre>
+
+    <pre><label for="phno">Phone No           :</label> <input type="int" id="phno" name="phno" value="" required=""></pre>
+       
+        
+    <button input type="submit" name="signup" method="POST"  value="SIGNUP" >SIGNUP</button>
+    <h4>Already have an account?  <a href="wordlogin.html">Login</a></h4>
+</div>
+    
+</form>
+</h2>
+
+                
+
+    </body>
+</html>
